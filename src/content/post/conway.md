@@ -1,5 +1,5 @@
 ---
-title: "Conway's glider formatted as Conway's glider"
+title: "Conway's glider formatted as a Conway's glider"
 description: "This writeup describes how to implement that yourself"
 publishDate: "2 Nov 2024"
 tags: []
