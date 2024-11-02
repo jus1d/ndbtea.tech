@@ -1,9 +1,11 @@
 ---
 title: "Conway's glider formatted as a Conway's glider"
 description: "This writeup describes how to implement that yourself"
-publishDate: "2 Nov 2024"
+publishDate: "1 Nov 2024"
+updatedDate: "2 Nov 2024"
 tags: []
-draft: true
+draft: false
+fresh: true
 ---
 
 ## Understanding the Game of Life

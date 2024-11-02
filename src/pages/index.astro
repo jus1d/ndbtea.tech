@@ -154,7 +154,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>Web-application for creating shortened URLs</li>
-					<li>Backend written in Go (Gin, PostgreSQG and Redis)</li>
+					<li>Backend written in Go (Gin, PostgreSQL and Redis)</li>
 					<li>Frontend built with Next.js framework</li>
 					<li>Teleram bot in addition</li>
 					<li>Whole application wrapped with Docker for easy deploy</li>
@@ -165,7 +165,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		{
 			allPostsByDate.length > 0 && (
-				<Section title='Latest Posts'>
+				<Section title='Latest writes'>
 					<ul class='flex flex-col gap-y-2'>
 						{allPostsByDate.map((p) => (
 							<li class='flex flex-col gap-x-2 sm:flex-row'>
