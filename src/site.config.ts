@@ -3,7 +3,7 @@ import type { AstroExpressiveCodeOptions } from 'astro-expressive-code'
 
 export const siteConfig: SiteConfig = {
 	author: 'ndbtea',
-	title: "ndbtea's site",
+	title: "ndbtea",
 	description: "ndbtea's personal site",
 	lang: 'en-US',
 	ogLocale: 'en_US',
