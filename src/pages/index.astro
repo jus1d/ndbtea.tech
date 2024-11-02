@@ -5,7 +5,7 @@ import Card from '../components/Card.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import Label from '../components/Label.astro'
 import SkillLayout from '../components/SkillLayout.astro'
-import PostPreview from '@/components/blog/PostPreview.astro'
+import PostPreview from '@/components/writes/PostPreview.astro'
 
 import { Image } from 'astro:assets'
 import avatar from '../assets/avatar.png'
@@ -89,19 +89,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				(non-commercial) and pretty cool sense of humor
 			</p>
 		</Section>
-		<!-- {
-			allPostsByDate.length > 0 && (
-				<Section title='Posts'>
-					<ul class='flex flex-col gap-y-2'>
-						{allPostsByDate.map((p) => (
-							<li class='flex flex-col gap-x-2 sm:flex-row'>
-								<PostPreview post={p} />
-							</li>
-						))}
-					</ul>
-				</Section>
-			)
-		} -->
 
 		<Section title='Education'>
 			<Card
@@ -173,6 +160,20 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				<a href='https://github.com/makeshort'>Source Code</a>
 			</Card>
 		</Section>
+
+		<!-- {
+			allPostsByDate.length > 0 && (
+				<Section title='Posts'>
+					<ul class='flex flex-col gap-y-2'>
+						{allPostsByDate.map((p) => (
+							<li class='flex flex-col gap-x-2 sm:flex-row'>
+								<PostPreview post={p} />
+							</li>
+						))}
+					</ul>
+				</Section>
+			)
+		} -->
 
 		<Section title='Skills'>
 			<SkillLayout title='Languages' skills={languages} />
