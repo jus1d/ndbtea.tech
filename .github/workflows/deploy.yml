@@ -18,6 +18,7 @@ jobs:
             user: ${{ secrets.SSH_USER }}
             private_key: ${{ secrets.SSH_PRIVATE_KEY }}
             command: |
+                source ~/.bashrc;
                 cd apps/ndbtea.tech;
                 git pull;
                 npm run build;
