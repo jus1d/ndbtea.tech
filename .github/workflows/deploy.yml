@@ -18,7 +18,7 @@ jobs:
             user: ${{ secrets.SSH_USER }}
             private_key: ${{ secrets.SSH_PRIVATE_KEY }}
             command: |
-              mv apps/ndbtea.tech
+              cd apps/ndbtea.tech
               npm install
               npm run build
               mv ./dist/* /var/www/ndbtea.tech/out/
