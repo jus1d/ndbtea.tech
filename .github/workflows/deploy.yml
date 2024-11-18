@@ -18,8 +18,9 @@ jobs:
             user: ${{ secrets.SSH_USER }}
             private_key: ${{ secrets.SSH_PRIVATE_KEY }}
             command: |
+              source ~/.bashrc;
               cd apps/ndbtea.tech;
               npm install;
               npm run build;
               rm -rf /var/www/ndbtea.tech/out/*;
-              mv ./dist/* /var/www/ndbtea.tech/out/;
+              cp -r ./dist/* /var/www/ndbtea.tech/out/;
