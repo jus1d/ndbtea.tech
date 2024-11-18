@@ -21,4 +21,4 @@ jobs:
                 cd apps/ndbtea.tech;
                 git pull;
                 npm run build;
-                sudo cp -r ./dist/* /var/www/yodreik/out/;
+                sudo cp -r ./dist/* /var/www/ndbtea.tech/out/;

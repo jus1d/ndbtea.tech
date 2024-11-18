@@ -11,7 +11,7 @@ import icon from 'astro-icon'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://ndbtea.xyz',
+	site: 'https://ndbtea.tech',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
