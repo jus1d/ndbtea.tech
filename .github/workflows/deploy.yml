@@ -10,21 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          echo "StrictHostKeyChecking no" >> ~/.ssh/config
-
-      - name: Run commands on remote server
-        run: |
-            ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
-            cd apps/ndbtea.tech
-            npm install
-            npm run build
-            rm -rf /var/www/ndbtea.tech/out/*
-            cp -r ./dist/* /var/www/ndbtea.tech/out/
+      - name: Run on remote server
+        uses: D3rHase/ssh-command-action@latest
+        with:
+            host: ${{ secrets.SSH_HOST }}
+            port: ${{ secrets.SSH_PORT }}
+            user: ${{ secrets.SSH_USER }}
+            private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+            command: |
+                cd apps/ndbtea.tech;
+                git pull;
+                npm run build;
+                sudo cp -r ./dist/* /var/www/yodreik/out/;
