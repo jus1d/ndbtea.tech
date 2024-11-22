@@ -20,9 +20,9 @@ First of all, I created this list of resources for my personal use.
 
 ## 2/ Operating Systems
 
-[Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+[Operating Systems: Three Easy Pieces - Book](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
-[University of Wisconsin CS.537: Introduction to Operating Systems](https://pages.cs.wisc.edu/~remzi/Classes/537/Fall2021/)
+[WISC CS.537: Introduction to Operating Systems](https://pages.cs.wisc.edu/~remzi/Classes/537/Fall2021/)
 
 [MIT 6.S081: Operating System Engineering](https://pdos.csail.mit.edu/6.S081/2021/schedule.html)
 
@@ -45,7 +45,7 @@ First of all, I created this list of resources for my personal use.
 
 [CS144: Introduction to Computer Networking](https://www.youtube.com/playlist?list=PLoCMsyE1cvdWKsLVyf6cPwCLDIZnOj0NS)
 
-[Wireshark Labs](http://gaia.cs.umass.edu/kurose_ross/wireshark.php)
+[UMASS - Wireshark Labs](http://gaia.cs.umass.edu/kurose_ross/wireshark.php)
 
 ## 6/ Databases
 
